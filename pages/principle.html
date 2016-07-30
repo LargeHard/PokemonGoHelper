@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>PokemonGoHleper官网</title>
+	    <link rel="stylesheet" href="../pure/0.5.0/pure-min.css">
+
+		<style>
+
+		    .l-box {
+		        padding: 1em;
+		    }
+
+
+			.bg-primary {
+			    background: rgb(63, 81, 181);
+			    color: #FFFFFF;
+			}
+
+			html, button, input, select, textarea,
+			.pure-g [class *= "pure-u"] {
+			    font-family: Georgia, Times, "Times New Roman", serif;
+			}
+
+	        .button-success,
+	        .button-error,
+	        .button-warning,
+	        .button-secondary {
+	            color: white;
+	            border-radius: 4px;
+	            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	        }
+	        .button-success {
+	            background: rgb(28, 184, 65); /* this is a green */
+	        }
+	        .button-error {
+	            background: rgb(202, 60, 60); /* this is a maroon */
+	        }
+	        .button-warning {
+	            background: rgb(223, 117, 20); /* this is an orange */
+	        }
+	        .button-secondary {
+	            background: rgb(66, 184, 221); /* this is a light blue */
+	        }
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="pure-g bg-primary">
+		    <div class="pure-u">
+		    	<div class="l-box">
+		    		<p>PokemonGoHleper原理与反作弊</p>
+		    	</div>
+		    </div>
+		</div>
+
+		<div class="pure-menu pure-menu-open pure-menu-horizontal">
+		    <ul>
+		        <li><a href="../index.html">首页</a></li>
+		        <li><a href="./principle.html">插件原理与反作弊原理</a></li>
+		        <li><a href="./contact_me.html">联系我</a></li>
+		    </ul>
+		</div>
+
+
+		<div class="pure-g">
+		    <div class="pure-u">
+		    	<div class="l-box">
+		    		<p>最近好像PokemonGo反作弊越来越严厉了，朋友很多都被封了哈哈哈，当然还是还有解封的方法的，不过我想从开发者来说一说吧。</p>
+		    		<p>从这个游戏发布第一天开始我就知道作弊器该怎么做并且该如何反作弊。我自己以前也搞过Android黑科技，所以大概还是清楚的。</p>
+		    		<p>先说说官方怎么反作弊吧，两个方法：1、检测软件本身和软件运行环境；2、用户行为分析。第一个方法，举个例子，网上很多作弊版，这些都是反编译游戏然后重新打包的，这个就是软件本身被修改了，可以检测出来；第二个方法，举个例子，瞬移，你懂吧？我只要检测到你瞬移，我立马把你封了。</p>
+		    		<p>现在官方的检测方法基本是使用用户行为分析来搞的，这个反作弊的话，代码层面没什么好办法可以解决，玩家自己节制点吧。</p>
+		    		<p>你要说哪种作弊方法最容易被抓？使用PokemonGo的修改版最容易被封号，在Android上面代码自检是很容易的事。但是好像现在官网还没对这些做处理？也是，这版本号还没到0.3，要加紧时间把游戏完善了再说，如果这个时候他们要开发反作弊系统，必须是能长久的，对，就是上面所说的用户行为分析。</p>
+		    		<p>好了，接下来说哪种防封号是最有效的，使用Xposed。这也是为什么我选择基于Xposed的原因，未来有一天，使用PokemonGo修改版会被封号，而Xposed则不会。为什么？你要知道，软件运行在Android环境里面，例如PokemonGo，我们移动的时候，GPS会告诉PokemonGo向哪个方向移动多少米。但是我们走着会累啊，能不能让我们不要走动，然后让系统环境的GPS告诉PokemonGo我们向哪个方向移动了多少米？毕竟手机使我们买的，我让它干嘛还不行吗？肯定可以啊，借助Xposed我们可以修改软件的运行环境。软件运行的环境我们都可以修改了，它检查得出来吗？查不出来。</p>
+		    		<p></p>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+</html>
